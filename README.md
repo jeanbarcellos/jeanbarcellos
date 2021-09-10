@@ -1,7 +1,14 @@
 ### Olá! Eu sou o Jean Barcellos
 
-- 🔭 Trabalho como Desenvolvedor Full-stack
-- 🌱 Estudando C#/ASP.NET Core
+- 💻 Envolvido com projetos de programação desde 2008.
+
+- 🎓 Bacharel Laureado em Sistemas de Informação
+
+- 🔭 Trabalho como Engenheiro de Software e Desenvolvedor Full-stack
+
+- 🌱 Atualmente estou estudando/revisando:
+   -  C# ASP.NET Core
+   -  Java Spring
 
 <!--
 Here are some ideas to get you started:
