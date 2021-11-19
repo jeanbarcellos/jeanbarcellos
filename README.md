@@ -7,11 +7,6 @@
    -  C# ASP.NET Core
    -  Java Spring
 
-## Siga-me
-
-[💼 LinkedIn](https://www.linkedin.com/in/jeanbarcellos) <br>
-[📸 Instagram](https://instagram.com/jeanbarcellos) <br />
-
 <!--
 Here are some ideas to get you started:
 
@@ -41,7 +36,15 @@ Here are some ideas to get you started:
   <img align="center" alt="jb-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">  
 </div>
   
- ##
+<br>
+<br>
+
+## Siga-me
+
+<!--
+[💼 LinkedIn](https://www.linkedin.com/in/jeanbarcellos) <br>
+[📸 Instagram](https://instagram.com/jeanbarcellos) <br />
+-->
   
  <div> 
   <a href="https://instagram.com/jeanbarcellos" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 	
