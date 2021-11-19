@@ -1,14 +1,16 @@
 ### Olá! Eu sou o Jean Barcellos
 
 - 💻 Envolvido com projetos de programação desde 2008.
-
 - 🎓 Bacharel Laureado em Sistemas de Informação
-
 - 🔭 Trabalho como Engenheiro de Software e Desenvolvedor Full-stack
-
 - 🌱 Atualmente estou estudando/revisando:
    -  C# ASP.NET Core
    -  Java Spring
+
+## Siga-me
+
+[💼 LinkedIn](https://www.linkedin.com/in/jeanbarcellos) <br>
+[📸 Instagram](https://instagram.com/jeanbarcellos) <br />
 
 <!--
 Here are some ideas to get you started:
