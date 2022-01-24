@@ -2,7 +2,7 @@
 
 - 💻 Envolvido com projetos de programação desde 2008.
 - 🎓 Bacharel Laureado em Sistemas de Informação
-- 🔭 Trabalho como Engenheiro de Software e Desenvolvedor Full-stack
+- 🔭 Trabalho como Arquiteto de Software e Desenvolvedor Full-stack
 - 🌱 Atualmente estou estudando/revisando:
    -  C# ASP.NET Core
    -  Java Spring
