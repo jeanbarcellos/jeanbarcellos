@@ -2,10 +2,11 @@
 
 - 💻 Envolvido com projetos de programação desde 2008.
 - 🎓 Bacharel Laureado em Sistemas de Informação
-- 🔭 Trabalho como Arquiteto de Software e Desenvolvedor Full-stack
+- 🔭 Trabalho como Software Developer na [Cresol Confederação](https://cresol.com.br/)
 - 🌱 Atualmente estou estudando/revisando:
    -  C# ASP.NET Core
    -  Java Spring
+   -  Java Quarkus
 
 <!--
 Here are some ideas to get you started:
