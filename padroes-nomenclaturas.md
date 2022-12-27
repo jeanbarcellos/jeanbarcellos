@@ -7,16 +7,16 @@ Arquivo contendo alguns padrões e nomenclaturas que defini para os meus projeto
 Criação de objetos a partir de algum valor
 
 - `of`
-- `from`
+- `from` (evitar)
 
 Conversão para algum tipo
 
 - `to`
 
-Personalizar Saida
+Personalizar Saída
 
 - `as`
-  - examplo: `FindByIdAsList()`
+  - exemplo: `findByIdAsList()`
 
 <br>
 
@@ -53,9 +53,9 @@ Nome de métodos em classes Repositories
 
 **Listagem e Buscas**
 
-Métodos de listagem e buscas por critérios retornaram uma instãncia de `List`.
+Métodos de listagem e buscas por critérios retornaram uma instância de `List` (Mantendo ordenação).
 
-Métodos de buscas que devem obter somente um ou nenhum objeto retornarão a instância encontrada. Caso não exista, por padrão, retornarão `null`.
+Métodos de buscas que devem obter somente um ou nenhum objeto. Caso não exista, por padrão, retornarão `null`.
 
 - `findAll()`
 - `findById(id)`
@@ -87,12 +87,12 @@ Métodos de buscas que devem obter somente um ou nenhum objeto retornarão a ins
 
 **Customização de Retorno**
 
-Utilização de `AsOtion` para ao invés de retornar um valor `null`, retornar `Option`.
+Utilização de `AsOption` para ao invés de retornar um valor `null`, retornar `Option`.
 
-- `findByIdAsOtion(id)`
-- `findOneByAsOtion(Criteria)`
-- `findFistByAsOtion(Criteria)`
-- `findLastByAsOtion(Criteria)`
+- `findByIdAsOption(id)`
+- `findOneByAsOption(Criteria)`
+- `findFistByAsOption(Criteria)`
+- `findLastByAsOption(Criteria)`
 
 **Buscas ordenadas**
 
@@ -105,7 +105,7 @@ Exemplo:
 
 **Buscas paginadas**
 
-Métodos de buscas com resultados paginados devem conter um argumento com o objeto `PageRequest` e deve retornar uma instãncia de `Page`.
+Métodos de buscas com resultados paginados devem conter um argumento com o objeto `PageRequest` e deve retornar uma instância de `Page`.
 
 Exemplo:
 
@@ -121,6 +121,15 @@ Exemplo:
 - `findAll(Sort sort, PageRequest request)`
 - `findBy(Criteria criteria, Sort sort, PageRequest request)`
 
+**Objetos**
+
+| Nome          | Função                                                                                                                              |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `Criteria`    | Geralmente um `List` contendo os campos e os valores a serem buscados                                                               |
+| `Sort`        | Objeto de ordenação. Emcapsula um `Map` onde a _chave_ é o campo/coluna e o _valor_ é a direção `ASC` ou `DESC`                     |
+| `PageRequest` | Objeto de solicitação de paginação. Deve ser informado numero da página atual, quantidade de itens na página e ordenação (opcional) |
+| `Page`        | Objeto de responsta de paginação responsta                                                                                          |
+
 <br>
 
 ## Diretórios / Pacotes
@@ -131,10 +140,58 @@ Aguardando ...
 
 ### Serviços / Use Cases
 
-Aguardando ...
+Nome de métodos em classes de Serviços
+
+**Alteração de estado**
+
+- `insert`
+- `update`
+- `delete`
+- `save` (insert/update)
+
+**Listagem**
+
+- `getAll`
+- `getById`
 
 <br>
 
 ## Endpoints APIs
 
-Padronização dos enpoints.
+Um endpoint representa um recurso, ou melhor, um conjunto de objetos, portanto sempre usar no plural.
+
+Exemplo: Manutenção de Pessoas
+
+**CRUD simples**
+
+| Verbo    | Endpoint        | Descrição                        |
+| -------- | --------------- | -------------------------------- |
+| `GET`    | `/pessoas`      | Listar objetos                   |
+| `POST`   | `/pessoas`      | Inserir um objeto                |
+| `GET`    | `/pessoas/{id}` | Visualizar detalhes de um objeto |
+| `PUT`    | `/pessoas/{id}` | Alterar um objeto                |
+| `DELETE` | `/pessoas/{id}` | Excluir um objeto                |
+
+**Alteração de estado além do alterar**
+
+Sempre usar o verbo `PUT`
+
+| Verbo | Endpoint                   | Descrição          |
+| ----- | -------------------------- | ------------------ |
+| `PUT` | `/pessoas/{id}/inactivate` | Inativar um objeto |
+| `PUT` | `/pessoas/{id}/activate`   | Ativar um objeto   |
+
+**Exibição de objetos aninhados**
+
+| Verbo    | Endpoint                               | Descrição                                                   |
+| -------- | -------------------------------------- | ----------------------------------------------------------- |
+| `GET`    | `/pessoas/{id}/telefones`              | Listar objetos da lista                                     |
+| `POST`   | `/pessoas/{id}/telefones`              | Inserir um objeto na lista \*¹                              |
+| `GET`    | `/pessoas/{id}/telefones/{telefoneId}` | Visualizar detalhes um objeto da lista \*¹                  |
+| `PUT`    | `/pessoas/{id}/telefones/{telefoneId}` | Alterar um objeto da lista \*¹                              |
+| `DELETE` | `/pessoas/{id}/telefones/{telefoneId}` | Excluir um objeto da lista \*¹                              |
+| `PUT`    | `/pessoas/{id}/telefones`              | LOTE: Atualizar todos objetos da lista (removal orphan \*²) |
+| `DELETE` | `/pessoas/{id}/telefones`              | LOTE: Apagar todos objetos da lista                         |
+
+- **\*1** - Usar somente se necessário. Desejável optar pela atualização completa da lista.
+- **\*2** - Atualização de uma lista onde apaga-se completamente a lista persistente e adiciona a lista nova.
