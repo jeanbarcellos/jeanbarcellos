@@ -2,6 +2,13 @@
 
 Arquivo contendo alguns padrões e nomenclaturas que defini para os meus projetos
 
+## Idioma
+
+- Usar prioritariamente o Inglês
+
+<br>
+<br>
+
 ## Builder Static Method em um objeto
 
 Criação de objetos a partir de algum valor
@@ -19,6 +26,7 @@ Personalizar Saída
   - exemplo: `findByIdAsList()`
 
 <br>
+<br>
 
 ## DTO - Data Transfer Object
 
@@ -28,16 +36,45 @@ Sufixos para nomes de Classes que representam DTOs
 
 - `Request`
 - `Input`
-- `InputModel`
-- `Command`
+- `InputModel` <sup>DDD</sup>
+- `InputData` <sup>Clean Arch</sup>
+- `Command` <sup>CQRS</sup>
+- `Query` <sup>CQRS</sup>
 
-**dados de saida**
+Exemplo: `UserRequest`, `UserInput`, ...
+
+**Dados de saida**
 
 - `Response`
 - `Output`
-- `OutputModel`
-- `CommandResult`
+- `OutputModel` <sup>DDD</sup>
+- `Outputdata` <sup>Clean Arch</sup>
+- `CommandResult` <sup>CQRS</sup>
+- `QueryResult` <sup>CQRS</sup>
 
+Exemplo: `UserResponse`, `UserOutput`, ...
+
+**Objetos Aninhados**
+
+DTOs que representam objetos aninhados usar:
+
+- `Simple` \*aguardando definição
+- `SemDetalhes` \*aguardando definição
+- `Nested` - Objeto aninhado\*aguardando definição
+- `Full` - Objeto completo \*aguardando definição
+- `WithoutNested` - Obejto sem aninhamento, somente com campos do root \*aguardando definição
+
+**Outros tipos de Objetos**
+
+- `DTO` - Alguns usam somente DTO como sulfixo (eu combato fortemente isso)
+- `ViewModel` - Apresentação de objetos simples com tipos primitivos.
+  - Exemplo: Ao invés de retonar um campo de data com tipo DateTime deverá trazer com tipo String com a data já no formato desejado.
+- `DataStructure` ou `DS` <sup>Clean Code</sup>
+- `DataMapper` ou `Gateway`
+- `Notification` - representa uma notificação de problema (erro)
+- `Event` - representação de um evento
+
+<br>
 <br>
 
 ## Repositoy
@@ -131,14 +168,16 @@ Exemplo:
 | `Page`        | Objeto de responsta de paginação responsta                                                                                          |
 
 <br>
+<br>
 
 ## Diretórios / Pacotes
 
 Aguardando ...
 
 <br>
+<br>
 
-### Serviços / Use Cases
+## Serviços / Use Cases
 
 Nome de métodos em classes de Serviços
 
@@ -154,6 +193,7 @@ Nome de métodos em classes de Serviços
 - `getAll`
 - `getById`
 
+<br>
 <br>
 
 ## Endpoints APIs
@@ -195,3 +235,17 @@ Sempre usar o verbo `PUT`
 
 - **\*1** - Usar somente se necessário. Desejável optar pela atualização completa da lista.
 - **\*2** - Atualização de uma lista onde apaga-se completamente a lista persistente e adiciona a lista nova.
+
+<br>
+<br>
+
+## Mapper
+
+Padrões para Mappeadores de dados - objetos que transferen dados de um obejto para outro. Exemplo: DTO para Entity
+
+Usar prefixos:
+
+- `copy` - Para copiar valores dos campos de outro objeto
+- `to` - Para converter para um novo objeto (deve ir acompanhado pelo tido de dado de saida): Exemplo `toPessoa`
+  - `toList`
+  - `toMap`
