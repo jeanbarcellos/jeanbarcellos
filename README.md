@@ -1,12 +1,9 @@
 ### Olá! Eu sou o Jean Barcellos
 
 - 💻 Envolvido com projetos de programação desde 2008.
+- 🎓 MBA em Arquitetura de Software e Soluções
 - 🎓 Bacharel Laureado em Sistemas de Informação
-- 🔭 Trabalho como Software Developer na [Cresol Confederação](https://cresol.com.br/)
-- 🌱 Atualmente estou estudando/revisando:
-   -  C# ASP.NET Core
-   -  Java Spring
-   -  Java Quarkus
+- 🔭 Trabalho como Tech Lead e Senior Software Engineer na [Cresol Confederação](https://cresol.com.br/)
 
 <!--
 Here are some ideas to get you started:
