@@ -12,3 +12,4 @@
 - **107 - localidades** - API de localidades com consulta ao IBGE e ViaCEP para sincronização de dados
 - **108 - message bus** - Implementaçaõ de Service Bus - Comunicação assincrona
 - **109 - mba** - APIs para trabalho do MBA em Arquitetura de Software e Soluções
+- **110 - cache** - Demo Cache + Redis
