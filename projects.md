@@ -6,6 +6,7 @@
   - **[back.java](https://github.com/jeanbarcellos/project-101.backend-java)** - Backend em Java utilizando Spring Framework
   - **[back.csharp](https://github.com/jeanbarcellos/project-101.backend-csharp)** - Backend em C# utilizando ASP.NET Core 5
   - **[front.reactjs](https://github.com/jeanbarcellos/project-101.frontend-reactjs)** - Frontend em ReactJS
+  - **[front.nextjs](https://github.com/jeanbarcellos/project-101.frontend-nextjs)** - Frontend em Next.js
 - **[102 - clean architecture](https://github.com/jeanbarcellos/java.spring.project-102.clean-arch)** - Demo Java Spring para estudo de _Clean Architecture_
 - **[103 - fundamentals and features](https://github.com/jeanbarcellos/java.project-103.fundamentals-and-features)** - Revisão de fundamentos e recursos do JAVA
 - **[104 - quarkus](https://github.com/jeanbarcellos/java.quarkus.project-104)** - Projeto para demonstração e utilização do Quarkus em comparação com o Spring Data
