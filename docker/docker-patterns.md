@@ -65,7 +65,7 @@ O nome de uma imagem deve conter o username do Docker Hub `jeanbarcellos`, uma b
 
 Template:
 
-- `<docker-hub-id>_<projeto-nome>_<servico-nome>`
+- `<docker-hub-id>/<projeto-nome>_<servico-nome>`
 
 Exemplo:
 

@@ -22,9 +22,12 @@
 - **[112 - reactive vs imperative](https://github.com/jeanbarcellos/project-112)** -
 - **[113 - batch processing1](https://github.com/jeanbarcellos/project-113)** -
 - **[114 - schedulers](https://github.com/jeanbarcellos/project-114)** -
-- **[115 - REST Api | select, filtering, sorting and pagination](https://github.com/jeanbarcellos/project-115)** -
+- **[115 - REST Api | select, filtering, sorting and pagination - versionamento - standard response](https://github.com/jeanbarcellos/project-115)** - API Rest com paginação, filtro, ordenação e seleção de colunas. Padronização de respostas genéricas e erros. Versionamento
 - **[116 - framework initialization](https://github.com/jeanbarcellos/project-116)** -
 - **[117 - java legado: struts e sprout](https://github.com/jeanbarcellos/project-116)**
+- **118 - ...**
+- **119 - ...**
+- **120 - ...**
 
 ### Projetos testes e estudos
 
@@ -45,3 +48,24 @@
 ### Desafios
 
 ### Graduação e MBA
+
+## Sugestão de Projetos
+
+- MongoDB
+- DynamoDB
+- Observabilidade
+- RecargaPay CDI
+- Desafio PicPay
+- Desafio Itaú
+- Desafio BTG
+- Estrutura de dados Java
+- System Design - Netflix
+- System Design - Spotift
+- System Design - Youtube
+- Chat - WebSocket
+- WebFlux
+- Paginação
+- Headers no Spring
+- Spring Context
+
+---
